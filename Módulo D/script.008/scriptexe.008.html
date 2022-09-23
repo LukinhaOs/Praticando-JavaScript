@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício script 008</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            font: normal 17px Arial;
+            color: rgb(255, 255, 255);
+        }
+        #ex {
+            margin-top: 5px;
+            font-size: 10pt;
+            color: rgba(2, 2, 2, 0.671);
+            background-color: white;
+            border-radius: 5px;
+            padding: 2px;
+        }
+
+        #nac, #click {
+            border-radius: 5px;
+            border-style:none
+        }
+
+        #dado {
+            background-color: rgb(69, 117, 119);
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de nacionalidade no Brasil</h1>
+    <strong>Informe aqui a sua nacionalidade: </strong><input type="caratere" name="nac" id="nac">
+    <input type="button" value="verificar" id="click" onclick="consultar()"></br>
+    <p id="ex"><strong>Exemplo: Brasileiro(a) - Americano(a) - Mexicano(a).</strong></p>
+    <div id="dado">
+
+    </div>
+    <script>
+        function consultar() {
+            var veri = window.document.getElementById('nac')
+            var info = window.document.getElementById('dado')
+            var valor = String(veri.value)
+            dado.innerHTML = `<p>Sua nacionalidade é <strong>${valor}</strong></p>`
+            if (valor != 'Brasileiro(a)') {
+                dado.innerHTML += `<p>Você é <strong>estrangeiro(a)</strong></p>`
+            }
+            dado.innerHTML += '<p>Cadastro finalizado com sucesso! Tenha um boa dia!</p>'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(62, 180, 151);
+    font: normal 16px Arial;
+}
+
+section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+div#fundo1 {
+    background-color: cornflowerblue;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#resultado {
+    margin-top: 20px;
+    background-color: rgb(62, 180, 151);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#mensagem {
+    color: white;
+}
+
+#click, #parte1, #parte2, #parte3 {
+    color: rgb(62, 180, 151);
+    font: normal 16px Arial;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    font-weight: bold;
+}

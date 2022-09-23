@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <h1>Sistema de Multa - DETRAN(SP)</h1>
+    Informe a velocidade do carro registrada: <input type="number" name="msg" id="msg"> km/h.
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function calcular() {
+            var valor = window.document.getElementById('msg')
+            var resposta = window.document.getElementById('resultado')
+            var velocity = Number(valor.value)
+            resultado.innerHTML = `<p>Sua velocidade foi registrada em <strong>${velocity} km/h</strong></p>`
+            if (velocity > 80) {
+                resultado.innerHTML += '<p>Você foi <strong>multado(a)!</strong> Tenha cuidado!</p>'
+            }
+            else {
+                resultado.innerHTML +='<p>Obrigado por estar ciente e não ultrapassar os km/h minímos!</p>'
+                }
+            }
+    </script>
+</body>
+</html>

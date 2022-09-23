@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praticando JS Script 006.1</title>
+  <style>
+    body {
+      background-color: darkcyan;
+      font: normal 18px Arial;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Editando com o Java Script</h1>
+  <script>
+    window.alert('JavaScript é muito legal né?')
+    window.alert('Programar é muito legal :)')
+    var name = window.prompt('Digite seu nome meu caro visitante: ')
+    window.alert('É um prazer te conhecer ' + name)
+    document.write(`O seu nome escrito em lêtras maiúsculas <strong>${name.toUpperCase()}</strong></br>`)
+    document.write(`O seu nome escrito em lêtras minúsculas <strong>${name.toLowerCase()}</strong></br>`)
+    document.write(`O seu nome possuí <strong>${name.length} lêtras...</strong>`)
+  </script>
+</body>
+
+</html>

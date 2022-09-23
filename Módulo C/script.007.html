@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script em DOM com o Java Script</title>
+    <style>
+        body {
+            background-color: rgb(64, 115, 163);
+            color: white;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scripts com o DOM</h1>
+    <p>O Resultado será exibido aqui...</p>
+    <p>Uso de <strong>DOM</strong> em <strong> Java Script </strong></p>
+    <div id='msg'>Clique aqui!!</div></br>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esse elemento está escrito da seguinte forma | ' + p1.innerText)
+        p1.style.color = 'black'
+        corpo.style.background // Posso inserir uma cor aqui :) Para testes
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green' // Outra forma de identificar o elemento por ID
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+    </script>
+</body>
+</html>
