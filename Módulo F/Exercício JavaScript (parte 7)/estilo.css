@@ -1,0 +1,57 @@
+body{
+    background-color:midnightblue;
+    color: white;
+    font: normal 18px Trebuchet MS;
+    text-align: center;
+}
+
+#conteudo, #info {
+    margin: 10px;
+    background-color:rgb(72, 72, 167);
+    padding: 20px;
+    border-radius: 20px;;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#dados{
+background-color: white;
+height: auto;
+width: 350px;;
+margin: auto;
+margin-top: 20px;;
+border-radius: 20px;;
+padding: 60px;
+color:rgb(72, 72, 167);
+}
+
+#buttonConfere {
+    margin-top: 10px;
+}
+
+#listaItens {
+    width: 180px;
+}
+
+#num, #button {
+    color: midnightblue;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buttonConfere, #listaItens {
+    margin-top: 20px;
+    color: white;
+    background-color: midnightblue;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
